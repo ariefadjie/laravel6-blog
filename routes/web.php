@@ -22,3 +22,6 @@ Route::get('about', function () {
 Route::get('contact', function () {
     return view('contact');
 });
+
+Route::get('photos', 'PhotoController@index');
+Route::get('photos/{id}', 'PhotoController@show');
